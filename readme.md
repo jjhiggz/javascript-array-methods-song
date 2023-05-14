@@ -2,20 +2,19 @@
 
 ## Introduction
 
-This is the first of many ERR's to come ( Educational Rap Repositories ). The goal is to make some stupid yet educational content through rapping, that has dumb lyrics and even dumber coding examples. 
+This is the first of many ERR's to come ( Educational Rap Repositories ). The goal is to make some stupid yet educational content through rapping, that has dumb lyrics and even dumber coding examples.
 
-To gain the full experience, turn the song on, and read through the lyrics in the readme here. 
+To gain the full experience, turn the song on, and read through the lyrics in the readme here.
 
 Please enjoy and thank you for listening🎉
 
 ## Contributing
 
-In the spirit of code stuff, please feel free to make a contribution if you notice a bug. Currently we do not have a testing suite, but honestly F**k it, we may at some point in the future because why not?
+In the spirit of code stuff, please feel free to make a contribution if you notice a bug. Currently we do not have a testing suite, but honestly F\*\*k it, we may at some point in the future because why not?
 
 ## The Song
 
-😃 Please check out the song here, I hope you like it 😃
-[Javascript Array Methods](https://soundcloud.com/higgzmadethebeatt/javascript-array-methods)
+😃 Please check out the song [here](https://soundcloud.com/higgzmadethebeatt/javascript-array-methods), I hope you like it 😃
 
 ## (Lyrics Walkthrough)
 
@@ -26,28 +25,30 @@ With Javascript Array Methods I can rule the world
 I kow FP so I can steal your girl
 
 - Map
-- Filter 
-- Find 
+- Filter
+- Find
 - Reduce
 
 When she hear this song she be shaking her kaboose
-Start with the array  dot method like that
+Start with the array dot method like that
 
 ```ts
 [...data].methodName();
 ```
 
 You're girl like an argument so she gon' call back
+
 ```js
-function yourGirl(something){
-    // custom logic here
-    return something
+function yourGirl(something) {
+  // custom logic here
+  return something;
 }
 
-[...data].methodName(yourGirl)
+[...data].methodName(yourGirl);
 ```
 
 Like to chain my code so I can keep it fly
+
 ```js
 const word = "HIGGZ";
 "hello"
@@ -59,8 +60,7 @@ const word = "HIGGZ";
 But I keep it flexible with the functions I apply
 
 ```js
-const functionIApply = (_char, charIndex) =>
-  word[charIndex];
+const functionIApply = (_char, charIndex) => word[charIndex];
 
 "hello"
   .split("")
@@ -77,18 +77,16 @@ const functionIApply = (_char, charIndex) =>
 ].find((person) => person.baller)?.name; // HumbleGawwwd
 ```
 
-
 .filter helps me get rid of all the poo
+
 ```js
-["💩", "💩", "💩", "✅", "💩", "✅"].filter(
-  (emoji) => emoji !== "💩"
-); //[ "✅", "✅" ]
+["💩", "💩", "💩", "✅", "💩", "✅"].filter((emoji) => emoji !== "💩"); //[ "✅", "✅" ]
 ```
 
 .map gets me all this gold from crap
+
 ```js
-["💩", "💩", "💩"]
-    .map((_emoji) => "💵"); //[💵 💵 💵 ]
+["💩", "💩", "💩"].map((_emoji) => "💵"); //[💵 💵 💵 ]
 ```
 
 and .reduce too complex for this rap
@@ -107,8 +105,8 @@ you can make your own functions you could be consuming
 - [minBy](/custom-applicatives/minBy.ts)
 - [maxBy](/custom-applicatives/maxBy.ts)
 - sortBy
-    - Just use `toSorted`
-    - 🙏 ES2023
+  - Just use `toSorted`
+  - 🙏 ES2023
 - [groupBy](/custom-applicatives/groupBy.ts)
 
 // You could make it chain-like
@@ -122,9 +120,7 @@ let myName = "HIGGZ";
 pipe(
   "hello",
   (s) => s.split(""),
-  map.indexed(
-    (_char, charIndex) => myName[charIndex]
-  ),
+  map.indexed((_char, charIndex) => myName[charIndex]),
   (s) => s.join("")
 );
 ```
@@ -135,7 +131,7 @@ gotta keep your code holy, program like a cleric
 keep the types accurate by using a generic
 
 ```ts
-type AwesomeString<T extends string> =  `Humblegawwwd slaps but also, ${string}`
+type AwesomeString<T extends string> = `Humblegawwwd slaps but also, ${string}`;
 ```
 
 push it pop it,like a [stack]()
@@ -173,9 +169,7 @@ const myStudents = [
   { name: "Zak", knowsJS: true },
 ];
 
-myStudents.every(
-  (student) => student.knowsJS
-); // true
+myStudents.every((student) => student.knowsJS); // true
 ```
 
 We don't need to go rehearse,
@@ -199,9 +193,7 @@ const items = [
   { name: "javascript", priority: 4 },
 ];
 
-items.sort(
-  (a, b) => a.priority - b.priority
-);
+items.sort((a, b) => a.priority - b.priority);
 
 console.log(items); // changed
 ```
@@ -216,14 +208,11 @@ const items2 = [
   { name: "javascript", priority: 4 },
 ];
 
-const sorted = items2.toSorted(
-  (a, b) => a.priority - b.priority
-);
+const sorted = items2.toSorted((a, b) => a.priority - b.priority);
 
 console.log(items2); // unchanged
 console.log(sorted); // changed
 ```
-
 
 If you want to keep it nice
 use `Array.slice`
@@ -235,10 +224,7 @@ function SomeComponent() {
     <>
       <section>
         {data.map((item) => (
-          <div
-            className="item"
-            key={item.id}
-          >
+          <div className="item" key={item.id}>
             {item.name}
           </div>
         ))}
@@ -264,10 +250,7 @@ function SomeComponent2() {
     <>
       <section>
         {data.map((item) => (
-          <div
-            className="item"
-            key={item.id}
-          >
+          <div className="item" key={item.id}>
             {item.name}
           </div>
         ))}
@@ -325,4 +308,3 @@ Uh yeah
 Uh yeah
 
 That's the array methods rap
-
