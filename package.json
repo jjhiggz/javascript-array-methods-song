@@ -1,0 +1,13 @@
+{
+  "name": "javascript-array-method-song",
+  "version": "1.0.0",
+  "description": "This is an Educational Rap Repository for the song \"Javascript Array Method Song\"",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "HIGGZ aka Humblegawwwwd aka Jon Higger, aka the best programmer in rap, aka the best rapper on github ",
+  "license": "ISC",
+  "dependencies": {
+    "remeda": "^1.14.0"
+  }
+}
