@@ -16,7 +16,7 @@ In the spirit of code stuff, please feel free to make a contribution if you noti
 
 😃 Please check out the song [here](https://soundcloud.com/higgzmadethebeatt/javascript-array-methods), I hope you like it 😃
 
-## (Lyrics Walkthrough)
+## Lyrics Walkthrough
 
 Alright, I don't know if I could kill a manatee with my bare hands
 But I can definitely write some javascript
@@ -109,8 +109,8 @@ you can make your own functions you could be consuming
   - 🙏 ES2023
 - [groupBy](/custom-applicatives/groupBy.ts)
 
-// You could make it chain-like
-// if you could make a new pipe
+You could make it chain-like,
+if you could make a new pipe
 
 ```js
 import { pipe, map } from "remeda";
