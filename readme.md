@@ -92,11 +92,12 @@ const functionIApply = (_char, charIndex) => word[charIndex];
 and .reduce too complex for this rap
 
 ```js
-const toBeContinued = "to be continued...";
-
-[...toBeContinued].reduce((acc, el) => {
-  return acc + el.charCodeAt(0);
-}, 0);
+[116, 111, 32, 98, 101, 32, 99, 111, 110, 116, 105, 110, 117, 101, 100, 46, 46, 46]
+   .reduce(
+     (acc, el) => 
+         acc + String.fromCharCode(el), 
+     ""
+   ) 
 ```
 
 But that's not all if you know what you're doing
